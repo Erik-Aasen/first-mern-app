@@ -89,7 +89,7 @@ function EditExercises(props) {
 
         console.log(exercise)
 
-        axios.post('http://localhost:5000/exercises/update/'+props.match.params.id, exercise)
+        axios.put('http://localhost:5000/exercises/update/'+props.match.params.id, exercise)
             .then(res => console.log(res.data));
 
         window.location = '/';
