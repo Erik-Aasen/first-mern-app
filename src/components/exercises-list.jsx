@@ -23,7 +23,7 @@ function ExercisesList(props) {
     useEffect(() => {
       console.log('exercises-list component loaded');
         axios.get('http://localhost:5000/exercises/')
-        // .then(console.log('get req success'))
+        .then(console.log('get req success'))
         .then(res => {
             setExercisesList({exercises: res.data})
             // console.log('success');
